@@ -1,0 +1,16 @@
+- ! Destination C kullanilmiyo, tren homeStation ve sourceStation (a,b) arasinda gidiyo
+- !! Tren hizi destinationa gelirken azalmiyor
+- !! Tren Destinationa vardiginda yeni destination otomatik olusturulup trenin 10-20 saniye cooldown sonrasi tekrar yola cikmasi lazim
+    (su an tren destinationa vardiginda rota bitiyor, yeni rota olusmuyor, tren sonsuz hizlaniyor)
+- !! Tren hizi 210 km/h da exception gondermiyor
+- ! Sistem lokomotife ID atamiyor
+- ! Tren uygulamayi baslatinca zaten destinationi tamamlamis oluyor (uygulamayi baslatinca tren 0 km/h tan baslayip yola cikmasi lazim)
+- !!! Istasyonla onceden olusturulmali, mesela A, B, C, D... istasyonlari olmali, tren ornegin A dan D ye giderken ve ya A dan B ye giderken distancelar farkli olmali
+    ( Su an tren sadece olusturulmus iki istasyon arasinda gidiyor bu nedenle distance'i Presentation.java classinda biz olusturuyoruz)
+    ( Ornegin bir map icinde farkli istasyonlar ve istasyonlar arasinda yolculuk eden trenler )
+- Lokomotife istasyon değil rota verilecek
+-
+
+
+A----100------B--------150-----C---50---D  200----F--------G---------100
+
